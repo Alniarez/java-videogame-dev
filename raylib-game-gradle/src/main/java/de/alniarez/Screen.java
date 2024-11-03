@@ -4,7 +4,7 @@ import static com.raylib.Raylib.*;
 
 /**
  * Basic raylib window/screen.
- * It contains some defaults, and it;s implementation assumes there is only one possible screen at a time.
+ * It contains some defaults, and its implementation assumes there is only one possible screen at a time.
  */
 public class Screen {
 
