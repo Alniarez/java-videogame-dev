@@ -30,12 +30,7 @@ package com.raylib.examples.core;
 import de.alniarez.IBasicExample;
 import de.alniarez.Screen;
 
-import static com.raylib.Raylib.clearBackground;
-import static com.raylib.Raylib.drawText;
-import static com.raylib.Raylib.beginDrawing;
-import static com.raylib.Raylib.endDrawing;
-import static com.raylib.Raylib.RAYWHITE;
-import static com.raylib.Raylib.LIGHTGRAY;
+import static com.raylib.Raylib.*;
 
 public class BasicWindow implements IBasicExample {
 

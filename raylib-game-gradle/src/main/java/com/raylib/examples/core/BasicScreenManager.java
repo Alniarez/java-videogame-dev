@@ -21,16 +21,16 @@ package com.raylib.examples.core;
 import de.alniarez.IBasicExample;
 import de.alniarez.Screen;
 
+import static com.raylib.Raylib.*;
 import static com.raylib.Raylib.Gesture.GESTURE_TAP;
 import static com.raylib.Raylib.KeyboardKey.KEY_ENTER;
-import static com.raylib.Raylib.*;
 
 enum GameScreen {
     Logo,
     Title,
     Gameplay,
     Ending
-};
+}
 
 public class BasicScreenManager implements IBasicExample {
 

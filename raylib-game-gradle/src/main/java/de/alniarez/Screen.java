@@ -1,6 +1,7 @@
 package de.alniarez;
 
-import static com.raylib.Raylib.*;
+import static com.raylib.Raylib.initWindow;
+import static com.raylib.Raylib.setTargetFPS;
 
 /**
  * Basic raylib window/screen.

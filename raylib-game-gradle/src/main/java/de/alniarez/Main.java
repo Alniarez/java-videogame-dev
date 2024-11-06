@@ -1,8 +1,9 @@
 package de.alniarez;
 
-import static com.raylib.Raylib.*;
+import com.raylib.examples.core.NPathDrawingExample;
 
-import com.raylib.examples.core.*;
+import static com.raylib.Raylib.closeWindow;
+import static com.raylib.Raylib.windowShouldClose;
 
 
 /**

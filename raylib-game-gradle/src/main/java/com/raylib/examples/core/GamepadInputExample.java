@@ -26,19 +26,22 @@
 
 package com.raylib.examples.core;
 
-import com.raylib.*;
+import com.raylib.Color;
+import com.raylib.Rectangle;
+import com.raylib.Texture;
+import com.raylib.Vector2;
 import de.alniarez.IBasicExample;
 import de.alniarez.Screen;
 import de.alniarez.TextureCleanup;
 
 import java.lang.ref.Cleaner;
-import java.util.Optional;
 
 import static com.raylib.Raylib.*;
 import static com.raylib.Raylib.ConfigFlags.FLAG_MSAA_4X_HINT;
 import static com.raylib.Raylib.GamepadAxis.*;
 import static com.raylib.Raylib.GamepadButton.*;
-import static com.raylib.Raylib.KeyboardKey.*;
+import static com.raylib.Raylib.KeyboardKey.KEY_LEFT;
+import static com.raylib.Raylib.KeyboardKey.KEY_RIGHT;
 
 public class GamepadInputExample implements IBasicExample {
 

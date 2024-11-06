@@ -17,11 +17,11 @@
 package com.raylib.examples.core;
 
 import com.raylib.Camera2D;
+import com.raylib.Color;
+import com.raylib.Rectangle;
+import com.raylib.Vector2;
 import de.alniarez.IBasicExample;
 import de.alniarez.Screen;
-import com.raylib.Vector2;
-import com.raylib.Rectangle;
-import com.raylib.Color;
 
 import static com.raylib.Raylib.*;
 import static com.raylib.Raylib.KeyboardKey.*;
@@ -101,7 +101,7 @@ public class Camera2DExample implements IBasicExample {
             camera.rotation(-40);
 
         // Camera zoom controls
-        camera.zoom(camera.zoom() + ((float)getMouseWheelMove()*0.05f));
+        camera.zoom(camera.zoom() + (getMouseWheelMove() *0.05f));
 
         if (camera.zoom() > 3.0f)
             camera.zoom(3.0f);
