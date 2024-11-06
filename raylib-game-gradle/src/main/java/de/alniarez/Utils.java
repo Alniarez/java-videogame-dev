@@ -9,9 +9,7 @@ public class Utils {
 
    public static Texture loadTexture(String path) {
        var resource = Utils.class.getResource(path);
-       Texture texture = null;
-       if (resource != null) texture = Raylib.loadTexture(resource.getPath());
-       return texture;
+       return (resource != null) ? Raylib.loadTexture(resource.getPath()) : null;
    }
 
 }
