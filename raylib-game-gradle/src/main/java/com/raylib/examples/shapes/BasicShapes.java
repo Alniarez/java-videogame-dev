@@ -18,7 +18,7 @@
 package com.raylib.examples.shapes;
 
 import com.raylib.Vector2;
-import com.raylib.examples.IBasicExample;
+import de.alniarez.IBasicExample;
 import de.alniarez.Screen;
 
 import static com.raylib.Raylib.*;
@@ -30,6 +30,7 @@ public class BasicShapes implements IBasicExample {
 
     public BasicShapes(Screen screen) {
         _screen = screen;
+        _screen.title("raylib [shapes] example - basic shapes drawing").init();
     }
 
     @Override

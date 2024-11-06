@@ -17,7 +17,7 @@
 package com.raylib.examples.core;
 
 import com.raylib.Camera2D;
-import com.raylib.examples.IBasicExample;
+import de.alniarez.IBasicExample;
 import de.alniarez.Screen;
 import com.raylib.Vector2;
 import com.raylib.Rectangle;
@@ -39,6 +39,7 @@ public class Camera2DExample implements IBasicExample {
 
     public Camera2DExample(Screen screen) {
         _screen = screen;
+        _screen.title("raylib [core] example - 2D Camera system").init();
 
         // Initialization
         //--------------------------------------------------------------------------------------
@@ -153,4 +154,5 @@ public class Camera2DExample implements IBasicExample {
         endDrawing();
         //----------------------------------------------------------------------------------
     }
+
 }

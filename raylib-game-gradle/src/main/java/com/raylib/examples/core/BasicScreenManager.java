@@ -18,7 +18,7 @@
 
 package com.raylib.examples.core;
 
-import com.raylib.examples.IBasicExample;
+import de.alniarez.IBasicExample;
 import de.alniarez.Screen;
 
 import static com.raylib.Raylib.Gesture.GESTURE_TAP;
@@ -42,6 +42,7 @@ public class BasicScreenManager implements IBasicExample {
 
     public BasicScreenManager(Screen screen) {
         _screen = screen;
+        _screen.title("raylib [core] examples - basic screen manager").init();
     }
 
     @Override
@@ -143,4 +144,5 @@ public class BasicScreenManager implements IBasicExample {
         endDrawing();
         //----------------------------------------------------------------------------------
     }
+
 }

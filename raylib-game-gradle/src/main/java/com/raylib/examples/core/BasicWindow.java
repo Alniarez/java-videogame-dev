@@ -27,7 +27,7 @@
 
 package com.raylib.examples.core;
 
-import com.raylib.examples.IBasicExample;
+import de.alniarez.IBasicExample;
 import de.alniarez.Screen;
 
 import static com.raylib.Raylib.clearBackground;
@@ -43,6 +43,7 @@ public class BasicWindow implements IBasicExample {
 
     public BasicWindow(Screen screen) {
         _screen = screen;
+        _screen.title("raylib [core] example - Basic window").init();
     }
 
     @Override
@@ -57,4 +58,5 @@ public class BasicWindow implements IBasicExample {
         drawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
         endDrawing();
     }
+
 }

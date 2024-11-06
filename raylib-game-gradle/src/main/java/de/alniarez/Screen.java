@@ -59,7 +59,7 @@ public class Screen {
         return _title;
     }
 
-    public Screen fps(String title){
+    public Screen title(String title){
         _title = title;
         return this;
     }

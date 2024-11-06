@@ -1,6 +1,4 @@
-package com.raylib.examples;
-
-import de.alniarez.Screen;
+package de.alniarez;
 
 public interface IBasicExample {
 
