@@ -21,7 +21,7 @@ import com.raylib.Color;
 import com.raylib.Rectangle;
 import com.raylib.Vector2;
 import de.alniarez.IBasicExample;
-import de.alniarez.Screen;
+import de.alniarez.core.Screen;
 
 import static com.raylib.Raylib.*;
 import static com.raylib.Raylib.KeyboardKey.*;

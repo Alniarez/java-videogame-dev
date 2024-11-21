@@ -1,4 +1,4 @@
-package de.alniarez;
+package de.alniarez.core;
 
 import static com.raylib.Raylib.initWindow;
 import static com.raylib.Raylib.setTargetFPS;

@@ -18,7 +18,7 @@ package com.raylib.examples.core;
 
 import com.raylib.Vector2;
 import de.alniarez.IBasicExample;
-import de.alniarez.Screen;
+import de.alniarez.core.Screen;
 
 import static com.raylib.Raylib.*;
 import static com.raylib.Raylib.KeyboardKey.*;

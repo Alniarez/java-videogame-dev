@@ -31,7 +31,7 @@ import com.raylib.Rectangle;
 import com.raylib.Texture;
 import com.raylib.Vector2;
 import de.alniarez.IBasicExample;
-import de.alniarez.Screen;
+import de.alniarez.core.Screen;
 import de.alniarez.TextureCleanup;
 
 import java.lang.ref.Cleaner;

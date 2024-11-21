@@ -19,7 +19,7 @@ package com.raylib.examples.shapes;
 
 import com.raylib.Vector2;
 import de.alniarez.IBasicExample;
-import de.alniarez.Screen;
+import de.alniarez.core.Screen;
 
 import static com.raylib.Raylib.*;
 

@@ -28,7 +28,7 @@
 package com.raylib.examples.core;
 
 import de.alniarez.IBasicExample;
-import de.alniarez.Screen;
+import de.alniarez.core.Screen;
 
 import static com.raylib.Raylib.*;
 
