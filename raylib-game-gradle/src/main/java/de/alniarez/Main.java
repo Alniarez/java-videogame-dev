@@ -1,9 +1,9 @@
 package de.alniarez;
 
-import com.raylib.examples.core.NPathDrawingExample;
 import com.raylib.examples.shapes.BasicShapes;
-import de.alniarez.core.GameLoop;
+import de.alniarez.core.BadGameLoop;
 import de.alniarez.core.Screen;
+import de.alniarez.day2.Day2SimpleGame;
 import de.alniarez.day2.Day2TestScene;
 
 import static com.raylib.Raylib.closeWindow;
@@ -22,22 +22,27 @@ public class Main {
 
     public static void main(String... args) {
         // Raylib examples
-         // runExample();
+        //runExample();
 
 
         Screen screen = Screen.instance();
-        screen.width(800).height(480).fps(144).init();
+        screen.width(800).height(480).fps(60).init();
 
+        var simpleGame = new Day2SimpleGame(screen);
+        simpleGame.run();
+
+        /*
         var scene = new Day2TestScene().width(800).height(480);
-        var gameLoop = new GameLoop(screen, 30, scene);
+        var gameLoop = new BadGameLoop(screen, 0, scene);
         gameLoop.start();
+        */
 
     }
 
     static void runExample() {
         // Create screen
         Screen screen = Screen.instance();
-        screen.width(800).height(480).fps(144);
+        screen.width(800).height(480).fps(60);
 
         IBasicExample example;
         // example = new BasicWindow(screen);

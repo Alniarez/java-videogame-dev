@@ -2,7 +2,10 @@ package de.alniarez.core;
 
 import static com.raylib.Raylib.windowShouldClose;
 
-public class GameLoop {
+/**
+ * TODO: This one is plan BAD.
+ */
+public class BadGameLoop {
 
     private final Screen _screen;
     private final Scene _scene;
@@ -10,7 +13,7 @@ public class GameLoop {
 
     private boolean running = false;
 
-    public GameLoop(Screen screen, int updatesPerSecond, Scene scene) {
+    public BadGameLoop(Screen screen, int updatesPerSecond, Scene scene) {
         this._scene = scene;
         this._screen = screen;
         this._ups = updatesPerSecond;
@@ -35,7 +38,7 @@ public class GameLoop {
         if(_ups <= 0)
             _ups = _screen.fps(); // Assume target updates per second to match target frames (one update on each draw)
 
-        _screen.init(); // create window
+        _screen.init();
 
         running = true;
 
@@ -45,10 +48,8 @@ public class GameLoop {
     private void loop() {
         Thread logicThread = new Thread(this::runLogicLoop, "LogicThread");
 
-        // Start the logic thread
         logicThread.start();
 
-        // Run rendering on the main thread
         runRenderLoop();
 
         try {
@@ -57,9 +58,7 @@ public class GameLoop {
             Thread.currentThread().interrupt();
             e.printStackTrace();
         }
-
     }
-
 
     private void cleanup() {
         running = false;
