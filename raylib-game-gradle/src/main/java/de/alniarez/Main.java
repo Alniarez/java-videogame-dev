@@ -3,6 +3,7 @@ package de.alniarez;
 import com.raylib.examples.shapes.BasicShapes;
 import de.alniarez.core.BadGameLoop;
 import de.alniarez.core.Screen;
+import de.alniarez.day2.BouncingBallExample;
 import de.alniarez.day2.Day2SimpleGame;
 import de.alniarez.day2.Day2TestScene;
 
@@ -26,10 +27,14 @@ public class Main {
 
 
         Screen screen = Screen.instance();
-        screen.width(800).height(480).fps(60).init();
+        screen.width(800).height(600).fps(144);
 
-        var simpleGame = new Day2SimpleGame(screen);
-        simpleGame.run();
+        //var simpleGame = new Day2SimpleGame(screen);
+        //simpleGame.run();
+
+        var bouncing = new BouncingBallExample(screen);
+        bouncing.run();
+
 
         /*
         var scene = new Day2TestScene().width(800).height(480);
